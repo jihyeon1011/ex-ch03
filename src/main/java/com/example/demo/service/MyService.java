@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import com.example.demo.controller.MyController;
@@ -11,8 +12,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService {
 
+    private final MyController myController;
+
 	private static final Logger log = LoggerFactory.getLogger(MyService.class);
-	
+
+    MyService(MyController myController) {
+        this.myController = myController;
+    }
+
 	public String sayHello(String hi) {
 
 		String msg = hi + "좋은날";
@@ -103,59 +110,91 @@ public class MyService {
 		String re1 = car1.getColor();
 		Car car2 = new K5();
 		String re2 = car2.getColor();
-		
+
 		String result = re1 + "<br>" + re2 + "<br>" + "차 두대 출고";
 		log.info(result);
 		return result;
 	}
-	
+
 	public String ex325() {
 		List<Integer> list = new ArrayList<>();
 		String result = "";
-		
+
 		list.add(1);
 		list.add(2);
 		list.add(3);
-		
-		
+
 		result = list.get(1).toString();
-		
+
 		return "인덱스 1번째 값: " + result;
-		
+
 	}
-	
+
 	public String ex326() {
 		List<String> list = new ArrayList();
-		
+
 		list.add("public");
 		list.add("static");
 		list.add("void");
-		
-		for(int i = 0; i < list.size(); i++) {
+
+		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
 		list.remove(1);
 		int voidIndex = list.indexOf("void");
 		System.out.println("void의 index = " + voidIndex);
 		return String.valueOf(voidIndex);
-		
+
 	}
-	
+
 	public String ex327() {
 		String str1 = new String("is same?");
 		String str2 = new String("is same?");
-		
+
 		boolean result = str1 == str2;
-		
+
 		return String.valueOf(result);
 	}
-	
+
 	public String ex328() {
 		String str1 = new String("is same?");
 		String str2 = new String("is same?");
-		
+
 		boolean result = str1.equals(str2);
-		
+
 		return String.valueOf(result);
 	}
+
+	public String ex331() {
+		List<String> list = new ArrayList<>();
+
+		list.add("public");
+		list.add("static");
+		list.add("void");
+
+		list.sort(new Comparator<String>() {
+			@Override
+			public int compare(String str1, String str2) {
+				return str1.compareTo(str2);
+			}
+		});
+
+		list.sort((Comparator<String>) (str1, str2) -> str1.compareTo(str2));
+		return list.toString();
+	}
+
+	public String ex332() {
+		List<String> list = new ArrayList<>();
+		String result = "";
+		
+		list.add("public");
+		list.add("static");
+		list.add("void");
+		
+		list.stream().forEach(str ->
+		System.out.println(str));
+		
+		return 
+	}
+	
 }
