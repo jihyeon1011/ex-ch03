@@ -1,7 +1,6 @@
 package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
-
 import com.example.demo.service.MyService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,9 +23,9 @@ public class MyController {
 		return myService.sayHello("안녕");
 	}
 
-	@GetMapping("/ex70")
-	public String ex70() {
-		return myService.ex70();
+	@GetMapping("/ex321")
+	public String getex321() {
+		return myService.ex321();
 	}
 
 	@GetMapping("/ex70_int")
@@ -34,4 +33,34 @@ public class MyController {
 		return myService.ex70_int();
 	}
 
+	@GetMapping("/ex322")
+	public String getex322() {
+		return myService.ex322();
+	}
+	
+	@GetMapping("/ex323")
+	public String getex323() {
+		return myService.ex323();
+	}
+	
+	@GetMapping("/ex324")
+	public String getex324() {
+		return myService.ex324();
+	}
+	
+	@GetMapping("/ex325")
+	public String getex325() {
+		return myService.ex325();
+	}
+	
+	@GetMapping("/ex326")
+	public String getex326() {
+		return myService.ex326();
+	}
+	
+	@GetMapping("/ex327")
+	public String getex327() {
+		return myService.ex327();
+	}
+	
 }
