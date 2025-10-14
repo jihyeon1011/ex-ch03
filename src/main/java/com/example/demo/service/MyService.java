@@ -12,13 +12,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService {
 
-    private final MyController myController;
-
 	private static final Logger log = LoggerFactory.getLogger(MyService.class);
 
-    MyService(MyController myController) {
-        this.myController = myController;
-    }
 
 	public String sayHello(String hi) {
 
@@ -185,16 +180,16 @@ public class MyService {
 
 	public String ex332() {
 		List<String> list = new ArrayList<>();
-		String result = "";
+		StringBuilder sb = new StringBuilder();
 		
 		list.add("public");
 		list.add("static");
 		list.add("void");
 		
 		list.stream().forEach(str ->
-		System.out.println(str));
+		sb.append(str).append("<br>"));
 		
-		return 
+		return sb.toString();
 	}
 	
 }
