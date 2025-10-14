@@ -63,4 +63,9 @@ public class MyController {
 		return myService.ex327();
 	}
 	
+	@GetMapping("/ex328")
+	public String getex328() {
+		return myService.ex328();
+	}
+	
 }

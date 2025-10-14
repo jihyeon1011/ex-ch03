@@ -140,4 +140,22 @@ public class MyService {
 		return String.valueOf(voidIndex);
 		
 	}
+	
+	public String ex327() {
+		String str1 = new String("is same?");
+		String str2 = new String("is same?");
+		
+		boolean result = str1 == str2;
+		
+		return String.valueOf(result);
+	}
+	
+	public String ex328() {
+		String str1 = new String("is same?");
+		String str2 = new String("is same?");
+		
+		boolean result = str1.equals(str2);
+		
+		return String.valueOf(result);
+	}
 }
