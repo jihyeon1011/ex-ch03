@@ -1011,3 +1011,17 @@ Caused by: java.lang.ClassNotFoundException: CalculatorService
 2025-10-15T17:11:11.956+09:00  INFO 6276 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 2025-10-15T17:11:11.958+09:00  INFO 6276 --- [ch03] [Thread-6] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
 2025-10-15T17:11:11.962+09:00  INFO 6276 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T17:11:12.031+09:00  INFO 6276 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Starting Ch03Application using Java 21.0.8 with PID 6276 (C:\jihyeon\s09_springboot\ex-ch03\bin\main started by YONSAI in C:\jihyeon\s09_springboot\ex-ch03)
+2025-10-15T17:11:12.032+09:00  INFO 6276 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T17:11:12.156+09:00  INFO 6276 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-15T17:11:12.156+09:00  INFO 6276 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T17:11:12.157+09:00  INFO 6276 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T17:11:12.165+09:00  INFO 6276 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T17:11:12.165+09:00  INFO 6276 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 132 ms
+2025-10-15T17:11:12.204+09:00  INFO 6276 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T17:11:12.209+09:00  INFO 6276 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-15T17:11:12.210+09:00  INFO 6276 --- [ch03] [restartedMain] com.example.demo.Ch03Application         : Started Ch03Application in 0.196 seconds (process running for 88.304)
+2025-10-15T17:11:12.211+09:00  INFO 6276 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-15T17:14:01.927+09:00  INFO 6276 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (1 addition, 1 deletion, 0 modifications)
+2025-10-15T17:14:01.928+09:00  INFO 6276 --- [ch03] [Thread-8] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T17:14:01.930+09:00  INFO 6276 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
