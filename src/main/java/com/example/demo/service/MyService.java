@@ -15,7 +15,6 @@ public class MyService {
 
 	private static final Logger log = LoggerFactory.getLogger(MyService.class);
 
-
 	public String sayHello(String hi) {
 
 		String msg = hi + "좋은날";
@@ -182,22 +181,34 @@ public class MyService {
 	public String ex332() {
 		List<String> list = new ArrayList<>();
 		StringBuilder sb = new StringBuilder();
-		
+
 		list.add("public");
 		list.add("static");
 		list.add("void");
-		
-		list.stream().forEach(str ->
-		sb.append(str).append("<br>"));
-		
+
+		list.stream().forEach(str -> sb.append(str).append("<br>"));
+
 		return sb.toString();
 	}
-	
-	/*
-	 * private String ex333() { Integer[] integer[] integerArray = new Integer[] {1,
-	 * 2, 3, 4, 5, 6, 7, 8, 9, 10}; List<Integer> list =
-	 * Arrays.asList(integerArray);
-	 * 
-	 * }
-	 */
+
+	public Integer ex333() {
+		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		List<Integer> list = Arrays.asList(integerArray);
+
+		List evenList = new ArrayList<Integer>();
+
+		for (int i = 0; i < list.size(); i++) {
+			Integer number = list.get(i);
+			if (number % 2 == 0) {
+				evenList.add(number);
+			}
+		}
+
+		for (int i = 0; i < evenList.size(); i++) {
+			System.out.println(evenList.get(i));
+		}
+		return null;
+
+	}
+
 }
