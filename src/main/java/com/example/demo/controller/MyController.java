@@ -17,11 +17,11 @@ public class MyController {
 		this.myService = myService;
 	}
 
-	@GetMapping("/")
-	public String getMethodName_logtest() {
-		System.out.println("루트경로");
-		return myService.sayHello("안녕");
-	}
+//	@GetMapping("/")
+//	public String getMethodName_logtest() {
+//		System.out.println("루트경로");
+//		return myService.sayHello("안녕");
+//	}
 
 	@GetMapping("/ex321")
 	public String getex321() {
