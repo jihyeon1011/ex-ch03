@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.demo", "com.cjh.myform"})
+@ComponentScan(basePackages = {"com.example.demo", "com.cjh.myform", "com.cjh.ex_thymeleaf"})
 public class Ch03Application {
 
 	public static void main(String[] args) {

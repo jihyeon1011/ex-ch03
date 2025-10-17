@@ -243,4 +243,25 @@ public class ExService {
 		evenList.stream().forEach(value -> result.append(value).append("<br>"));
 		return result.toString();
 	}
+	
+	public String ex337() {
+		Integer[] integerArray = new Integer[] {1, 1, 1, 1, 2, 2, 2, 3, 3, 4};
+		StringBuilder result = new StringBuilder();
+		List<Integer> list = Arrays.asList(integerArray);
+		List<Integer> distinctList = list.stream().distinct().toList();
+		distinctList.stream().forEach(value -> result.append(value).append("<br>"));
+		return result.toString();
+	}
+	
+	public String ex338() {
+		String[] lowercaseArray = new String[] {"public", "static", "void"};
+		StringBuilder result = new StringBuilder();
+		List<String> lowercaseList = Arrays.asList(lowercaseArray);
+		List<String> uppercaseList = lowercaseList.stream()
+			.map(value -> value.toUpperCase()).toList();
+		uppercaseList.stream().forEach(value -> result.append(value).append("<br>"));
+		return result.toString();
+	}
+	
+	
 }
