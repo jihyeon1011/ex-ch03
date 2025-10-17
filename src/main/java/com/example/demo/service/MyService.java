@@ -225,4 +225,22 @@ public class MyService {
 		evenList.stream().forEach(value -> result.append(value).append("<br>"));
 		return result.toString();
 	}
+	
+	public String ex335() {
+		Integer[] integerArray = new Integer[] {1, 2, 3, 4, 5};
+		List<Integer> list = Arrays.asList(integerArray);
+		StringBuilder result = new StringBuilder();
+		list.stream().forEach(value -> result.append(value).append("<br>"));
+		return result.toString();
+	}
+	
+	public String ex336() {
+		Integer[] integerArray = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		List<Integer> list = Arrays.asList(integerArray);
+		List evenList = list.stream()
+				.filter(value -> value % 2 ==0).collect(Collectors.toList());
+		StringBuilder result = new StringBuilder();
+		evenList.stream().forEach(value -> result.append(value).append("<br>"));
+		return result.toString();
+	}
 }
