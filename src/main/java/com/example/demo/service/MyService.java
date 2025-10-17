@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.example.demo.controller.MyController;
 import org.slf4j.Logger;
@@ -191,10 +192,12 @@ public class MyService {
 		return sb.toString();
 	}
 
-	public Integer ex333() {
+	public String ex333() {
 		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		List<Integer> list = Arrays.asList(integerArray);
-
+		
+		String result = "";
+		
 		List evenList = new ArrayList<Integer>();
 
 		for (int i = 0; i < list.size(); i++) {
@@ -203,12 +206,23 @@ public class MyService {
 				evenList.add(number);
 			}
 		}
-
+		
 		for (int i = 0; i < evenList.size(); i++) {
-			System.out.println(evenList.get(i));
+			result += evenList.get(i) + "<br>";
 		}
-		return null;
+		return result;
 
 	}
 
+	public String ex334() {
+		Integer[] integerArray = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		List<Integer> list = Arrays.asList(integerArray);
+		
+		List evenList = list.stream()
+				.filter(value -> value % 2 == 0).collect(Collectors.toList());
+		
+		StringBuilder result = new StringBuilder();
+		evenList.stream().forEach(value -> result.append(value).append("<br>"));
+		return result.toString();
+	}
 }

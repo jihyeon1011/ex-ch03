@@ -79,7 +79,12 @@ public class MyController {
 	}
 
 	@GetMapping("/ex333")
-	public Integer getex333() {
+	public String getex333() {
 		return myService.ex333();
+	}
+	
+	@GetMapping("/ex334")
+	public String getex334() {
+		return myService.ex334();
 	}
 }
