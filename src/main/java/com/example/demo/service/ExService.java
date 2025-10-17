@@ -6,15 +6,15 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.example.demo.controller.MyController;
+import com.example.demo.controller.ExController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MyService {
+public class ExService {
 
-	private static final Logger log = LoggerFactory.getLogger(MyService.class);
+	private static final Logger log = LoggerFactory.getLogger(ExService.class);
 
 	public String sayHello(String hi) {
 

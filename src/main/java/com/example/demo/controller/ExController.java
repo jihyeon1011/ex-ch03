@@ -1,20 +1,20 @@
 package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.service.MyService;
+import com.example.demo.service.ExService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-public class MyController {
+public class ExController {
 
 	// 자바가 객체를 new로 생성하는 방식
 	// MyService myService = new MyService();
 
-	MyService myService;
+	ExService exService;
 
-	public MyController(MyService myService) {
-		this.myService = myService;
+	public ExController(ExService exService) {
+		this.exService = exService;
 	}
 
 //	@GetMapping("/")
@@ -25,77 +25,77 @@ public class MyController {
 
 	@GetMapping("/ex321")
 	public String getex321() {
-		return myService.ex321();
+		return exService.ex321();
 	}
 
 	@GetMapping("/ex70_int")
 	public Integer ex70_int() {
-		return myService.ex70_int();
+		return exService.ex70_int();
 	}
 
 	@GetMapping("/ex322")
 	public String getex322() {
-		return myService.ex322();
+		return exService.ex322();
 	}
 
 	@GetMapping("/ex323")
 	public String getex323() {
-		return myService.ex323();
+		return exService.ex323();
 	}
 
 	@GetMapping("/ex324")
 	public String getex324() {
-		return myService.ex324();
+		return exService.ex324();
 	}
 
 	@GetMapping("/ex325")
 	public String getex325() {
-		return myService.ex325();
+		return exService.ex325();
 	}
 
 	@GetMapping("/ex326")
 	public String getex326() {
-		return myService.ex326();
+		return exService.ex326();
 	}
 
 	@GetMapping("/ex327")
 	public String getex327() {
-		return myService.ex327();
+		return exService.ex327();
 	}
 
 	@GetMapping("/ex328")
 	public String getex328() {
-		return myService.ex328();
+		return exService.ex328();
 	}
 
 	@GetMapping("/ex331")
 	public String getex331() {
-		return myService.ex331();
+		return exService.ex331();
 	}
 
 	@GetMapping("/ex332")
 	public String getex332() {
-		return myService.ex332();
+		return exService.ex332();
 	}
 
 	@GetMapping("/ex333")
 	public String getex333() {
-		return myService.ex333();
+		return exService.ex333();
 	}
 	
 	@GetMapping("/ex334")
 	public String getex334() {
-		return myService.ex334();
+		return exService.ex334();
 	}
 	
 	@GetMapping("/ex335")
 	public String getex335() {
-		return myService.ex335();
+		return exService.ex335();
 	}
 	
 	@GetMapping("/ex336")
 	public String getex336() {
-		return myService.ex336();
+		return exService.ex336();
 	}
 	
 }
