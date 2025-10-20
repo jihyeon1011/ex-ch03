@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -274,5 +275,43 @@ public class ExService {
 		}
 		return null;
 	}
+
+	public String ex3310() {
+		Supplier<String> getSomeString = () -> {
+			return null;
+		};
+		
+		String isThisNull = getSomeString.get();
+		
+		System.out.println(isThisNull.toUpperCase());
+		
+		return null;
+	}
+
+	public String ex3311() {
+		Supplier <Optional<String>> getSomeString = () -> {
+			return Optional.empty();
+		};
+		
+		Optional<String> isThisNull = getSomeString.get();
+		
+		isThisNull.ifPresent(str -> System.out.println(str.toUpperCase()));
+		
+		return null;
+	}
+
+	public String ex3312() {
+		Supplier<Optional<String>> getSomeString = () -> {
+			return Optional.ofNullable("public static void");
+		};
+		
+		Optional<String> isThisNull = getSomeString.get();
+		
+		StringBuilder result = new StringBuilder();
+		isThisNull.ifPresent(str -> result.append(str.toUpperCase()));
+		
+		return result.toString();
+	}
+	
 
 }

@@ -113,5 +113,19 @@ public class ExController {
 		return exService.ex339();
 	}
 	
+	@GetMapping("/ex3310")
+	public String getex3310() {
+		return exService.ex3310();
+	}
+	
+	@GetMapping("/ex3311")
+	public String getex3311() {
+		return exService.ex3311();
+	}
+	
+	@GetMapping("/ex3312")
+	public String getex3312() {
+		return exService.ex3312();
+	}
 	
 }
