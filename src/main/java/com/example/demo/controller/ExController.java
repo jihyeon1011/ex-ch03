@@ -108,4 +108,10 @@ public class ExController {
 		return exService.ex338();
 	}
 	
+	@GetMapping("/ex339")
+	public String getex339() {
+		return exService.ex339();
+	}
+	
+	
 }

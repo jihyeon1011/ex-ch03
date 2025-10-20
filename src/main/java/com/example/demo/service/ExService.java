@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import com.example.demo.controller.ExController;
@@ -195,9 +196,9 @@ public class ExService {
 	public String ex333() {
 		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		List<Integer> list = Arrays.asList(integerArray);
-		
+
 		String result = "";
-		
+
 		List evenList = new ArrayList<Integer>();
 
 		for (int i = 0; i < list.size(); i++) {
@@ -206,7 +207,7 @@ public class ExService {
 				evenList.add(number);
 			}
 		}
-		
+
 		for (int i = 0; i < evenList.size(); i++) {
 			result += evenList.get(i) + "<br>";
 		}
@@ -215,53 +216,63 @@ public class ExService {
 	}
 
 	public String ex334() {
-		Integer[] integerArray = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		List<Integer> list = Arrays.asList(integerArray);
-		
-		List evenList = list.stream()
-				.filter(value -> value % 2 == 0).collect(Collectors.toList());
-		
+
+		List evenList = list.stream().filter(value -> value % 2 == 0).collect(Collectors.toList());
+
 		StringBuilder result = new StringBuilder();
 		evenList.stream().forEach(value -> result.append(value).append("<br>"));
 		return result.toString();
 	}
-	
+
 	public String ex335() {
-		Integer[] integerArray = new Integer[] {1, 2, 3, 4, 5};
+		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5 };
 		List<Integer> list = Arrays.asList(integerArray);
 		StringBuilder result = new StringBuilder();
 		list.stream().forEach(value -> result.append(value).append("<br>"));
 		return result.toString();
 	}
-	
+
 	public String ex336() {
-		Integer[] integerArray = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		Integer[] integerArray = new Integer[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		List<Integer> list = Arrays.asList(integerArray);
-		List evenList = list.stream()
-				.filter(value -> value % 2 ==0).collect(Collectors.toList());
+		List evenList = list.stream().filter(value -> value % 2 == 0).collect(Collectors.toList());
 		StringBuilder result = new StringBuilder();
 		evenList.stream().forEach(value -> result.append(value).append("<br>"));
 		return result.toString();
 	}
-	
+
 	public String ex337() {
-		Integer[] integerArray = new Integer[] {1, 1, 1, 1, 2, 2, 2, 3, 3, 4};
+		Integer[] integerArray = new Integer[] { 1, 1, 1, 1, 2, 2, 2, 3, 3, 4 };
 		StringBuilder result = new StringBuilder();
 		List<Integer> list = Arrays.asList(integerArray);
 		List<Integer> distinctList = list.stream().distinct().toList();
 		distinctList.stream().forEach(value -> result.append(value).append("<br>"));
 		return result.toString();
 	}
-	
+
 	public String ex338() {
-		String[] lowercaseArray = new String[] {"public", "static", "void"};
+		String[] lowercaseArray = new String[] { "public", "static", "void" };
 		StringBuilder result = new StringBuilder();
 		List<String> lowercaseList = Arrays.asList(lowercaseArray);
-		List<String> uppercaseList = lowercaseList.stream()
-			.map(value -> value.toUpperCase()).toList();
+		List<String> uppercaseList = lowercaseList.stream().map(value -> value.toUpperCase()).toList();
 		uppercaseList.stream().forEach(value -> result.append(value).append("<br>"));
 		return result.toString();
 	}
-	
-	
+
+	public String ex339() {
+		
+		Supplier<String> getSomeString = () -> {
+			return null;
+		};
+		
+		String isThisNull = getSomeString.get();
+		
+		if(null != isThisNull) {
+			System.out.println(isThisNull.toUpperCase());
+		}
+		return null;
+	}
+
 }
