@@ -1,11 +1,13 @@
-package com.example.demo;
+package com.cjh;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.example.demo", "com.cjh.myform", "com.cjh.ex_thymeleaf"})
+@ComponentScan(basePackages = {"com.cjh", "com.cjh.myform", "com.cjh.ex_thymeleaf", "com.cjh.mybatis"})
+@MapperScan("com.cjh.mybatis.mapper")
 public class Ch03Application {
 
 	public static void main(String[] args) {

@@ -587,3 +587,430 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2025-10-20T17:20:30.805+09:00  INFO 12664 --- [ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-10-20T17:20:30.805+09:00  INFO 12664 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-10-20T17:20:30.805+09:00  INFO 12664 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-22T04:22:02.768+09:00  INFO 5124 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 5124 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:22:02.771+09:00  INFO 5124 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:22:02.869+09:00  INFO 5124 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T04:22:02.869+09:00  INFO 5124 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T04:22:04.356+09:00  WARN 5124 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:22:05.001+09:00  INFO 5124 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:22:05.026+09:00  INFO 5124 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:22:05.026+09:00  INFO 5124 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:22:05.120+09:00  INFO 5124 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:22:05.120+09:00  INFO 5124 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2249 ms
+2025-10-22T04:22:05.312+09:00  INFO 5124 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:22:05.710+09:00  WARN 5124 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2025-10-22T04:22:05.714+09:00  INFO 5124 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-22T04:22:05.741+09:00  INFO 5124 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22T04:22:05.777+09:00 ERROR 5124 --- [ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2025-10-22T04:22:14.704+09:00  INFO 24220 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 24220 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:22:14.708+09:00  INFO 24220 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:22:14.776+09:00  INFO 24220 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T04:22:14.776+09:00  INFO 24220 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T04:22:15.974+09:00  WARN 24220 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:22:16.537+09:00  INFO 24220 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:22:16.561+09:00  INFO 24220 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:22:16.561+09:00  INFO 24220 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:22:16.648+09:00  INFO 24220 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:22:16.648+09:00  INFO 24220 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1871 ms
+2025-10-22T04:22:16.828+09:00  INFO 24220 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:22:17.219+09:00  WARN 24220 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2025-10-22T04:22:17.224+09:00  INFO 24220 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-22T04:22:17.249+09:00  INFO 24220 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22T04:22:17.283+09:00 ERROR 24220 --- [ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2025-10-22T04:24:01.744+09:00  INFO 14504 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 14504 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:24:01.748+09:00  INFO 14504 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:24:01.815+09:00  INFO 14504 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T04:24:01.815+09:00  INFO 14504 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T04:24:03.040+09:00  WARN 14504 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:24:03.625+09:00  INFO 14504 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:24:03.650+09:00  INFO 14504 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:24:03.651+09:00  INFO 14504 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:24:03.743+09:00  INFO 14504 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:24:03.744+09:00  INFO 14504 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1928 ms
+2025-10-22T04:24:03.922+09:00  INFO 14504 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:24:04.781+09:00  INFO 14504 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T04:24:04.871+09:00  INFO 14504 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T04:24:04.894+09:00  INFO 14504 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Started CalculatorApplication in 3.83 seconds (process running for 5.005)
+2025-10-22T04:24:07.005+09:00  INFO 14504 --- [ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T04:24:07.005+09:00  INFO 14504 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T04:24:07.007+09:00  INFO 14504 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T04:26:41.539+09:00  INFO 14504 --- [ch03] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T04:26:41.560+09:00  INFO 14504 --- [ch03] [RMI TCP Connection(13)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T04:26:41.568+09:00  INFO 14504 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-22T04:26:41.590+09:00  INFO 14504 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown aborted with one or more requests still active
+2025-10-22T04:26:41.576+09:00  WARN 14504 --- [ch03] [RMI TCP Connection(13)-127.0.0.1] org.apache.tomcat.util.net.Acceptor      : Interrupt was received while waiting for the acceptor thread [http-nio-8090-Acceptor] to stop
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1133) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:276) ~[na:na]
+	at org.apache.tomcat.util.net.Acceptor.stopMillis(Acceptor.java:183) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint.stopInternal(NioEndpoint.java:328) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.AbstractEndpoint.stop(AbstractEndpoint.java:1524) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol.stop(AbstractProtocol.java:721) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.Connector.stopInternal(Connector.java:1123) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardService.removeConnector(StandardService.java:299) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.lambda$removeServiceConnectors$1(TomcatWebServer.java:173) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.doWithConnectors(TomcatWebServer.java:192) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.removeServiceConnectors(TomcatWebServer.java:170) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:358) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:53) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:120) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:463) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:618) ~[spring-context-6.2.11.jar:6.2.11]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:432) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1172) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.5.6.jar:3.5.6]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-10-22T04:26:41.782+09:00  INFO 14504 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 14504 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:26:41.783+09:00  INFO 14504 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:26:42.295+09:00  WARN 14504 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:26:42.394+09:00  INFO 14504 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:26:42.397+09:00  INFO 14504 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:26:42.398+09:00  INFO 14504 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:26:42.445+09:00  INFO 14504 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:26:42.445+09:00  INFO 14504 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 655 ms
+2025-10-22T04:26:42.486+09:00  WARN 14504 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [C:\a_jihyeon\s09_springboot\ch03\bin\main\com\cjh\mybatis\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [C:\a_jihyeon\s09_springboot\ch03\bin\main\com\cjh\mybatis\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.cjh.mybatis.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-22T04:26:42.487+09:00  INFO 14504 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-22T04:26:42.494+09:00  INFO 14504 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22T04:26:42.533+09:00 ERROR 14504 --- [ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.cjh.mybatis.service.StudentService required a bean of type 'com.cjh.mybatis.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.cjh.mybatis.mapper.StudentMapper' in your configuration.
+
+2025-10-22T04:26:59.518+09:00  INFO 21740 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 21740 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:26:59.521+09:00  INFO 21740 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:26:59.589+09:00  INFO 21740 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T04:26:59.590+09:00  INFO 21740 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T04:27:00.882+09:00  WARN 21740 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:27:01.464+09:00  INFO 21740 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:27:01.490+09:00  INFO 21740 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:27:01.491+09:00  INFO 21740 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:27:01.589+09:00  INFO 21740 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:27:01.590+09:00  INFO 21740 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1999 ms
+2025-10-22T04:27:01.711+09:00  WARN 21740 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentRestController' defined in file [C:\a_jihyeon\s09_springboot\ch03\bin\main\com\cjh\mybatis\controller\StudentRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'studentService' defined in file [C:\a_jihyeon\s09_springboot\ch03\bin\main\com\cjh\mybatis\service\StudentService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.cjh.mybatis.mapper.StudentMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-10-22T04:27:01.715+09:00  INFO 21740 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-22T04:27:01.741+09:00  INFO 21740 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22T04:27:01.785+09:00 ERROR 21740 --- [ch03] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.cjh.mybatis.service.StudentService required a bean of type 'com.cjh.mybatis.mapper.StudentMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.cjh.mybatis.mapper.StudentMapper' in your configuration.
+
+2025-10-22T04:31:07.013+09:00  INFO 11380 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 11380 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:31:07.017+09:00  INFO 11380 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:31:07.097+09:00  INFO 11380 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T04:31:07.098+09:00  INFO 11380 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T04:31:08.850+09:00  WARN 11380 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:31:09.468+09:00  INFO 11380 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:31:09.494+09:00  INFO 11380 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:31:09.495+09:00  INFO 11380 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:31:09.593+09:00  INFO 11380 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:31:09.594+09:00  INFO 11380 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2494 ms
+2025-10-22T04:31:09.698+09:00  WARN 11380 --- [ch03] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ch03Application' defined in file [C:\a_jihyeon\s09_springboot\ch03\bin\main\com\example\demo\Ch03Application.class]: Failed to instantiate [com.example.demo.Ch03Application$$SpringCGLIB$$0]: Constructor threw exception
+2025-10-22T04:31:09.703+09:00  INFO 11380 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-10-22T04:31:09.730+09:00  INFO 11380 --- [ch03] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22T04:31:09.766+09:00 ERROR 11380 --- [ch03] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ch03Application' defined in file [C:\a_jihyeon\s09_springboot\ch03\bin\main\com\example\demo\Ch03Application.class]: Failed to instantiate [com.example.demo.Ch03Application$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar:3.5.6]
+	at com.example.demo.CalculatorApplication.main(CalculatorApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.6.jar:3.5.6]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.Ch03Application$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.11.jar:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	MapperScan cannot be resolved to a type
+
+	at com.example.demo.Ch03Application.<init>(Ch03Application.java:9) ~[main/:na]
+	at com.example.demo.Ch03Application$$SpringCGLIB$$0.<init>(<generated>) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.11.jar:6.2.11]
+	... 24 common frames omitted
+
+2025-10-22T04:31:29.316+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 25672 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:31:29.319+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:31:29.390+09:00  INFO 25672 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T04:31:29.391+09:00  INFO 25672 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T04:31:31.114+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:31:31.136+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:31:31.137+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:31:31.243+09:00  INFO 25672 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:31:31.244+09:00  INFO 25672 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1851 ms
+2025-10-22T04:31:31.830+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:31:32.349+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T04:31:32.415+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T04:31:32.428+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Started CalculatorApplication in 3.807 seconds (process running for 4.914)
+2025-10-22T04:31:33.930+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T04:31:33.931+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T04:31:33.933+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-22T04:31:40.700+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T04:31:40.915+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@405aa6fa
+2025-10-22T04:31:40.919+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T04:31:40.971+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : ==>  Preparing: SELECT * FROM student ORDER BY id DESC
+2025-10-22T04:31:41.012+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : ==> Parameters: 
+2025-10-22T04:31:41.064+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : <==      Total: 7
+2025-10-22T04:32:05.546+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : ==>  Preparing: SELECT * FROM student ORDER BY id DESC
+2025-10-22T04:32:05.546+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : ==> Parameters: 
+2025-10-22T04:32:05.549+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : <==      Total: 7
+2025-10-22T04:32:09.207+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-1] c.c.m.mapper.StudentMapper.findById      : ==>  Preparing: SELECT * FROM student WHERE id = ?
+2025-10-22T04:32:09.211+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-1] c.c.m.mapper.StudentMapper.findById      : ==> Parameters: 1(Long)
+2025-10-22T04:32:09.219+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-1] c.c.m.mapper.StudentMapper.findById      : <==      Total: 0
+2025-10-22T04:32:11.870+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-9] c.c.m.mapper.StudentMapper.findById      : ==>  Preparing: SELECT * FROM student WHERE id = ?
+2025-10-22T04:32:11.871+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-9] c.c.m.mapper.StudentMapper.findById      : ==> Parameters: 1(Long)
+2025-10-22T04:32:11.872+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-9] c.c.m.mapper.StudentMapper.findById      : <==      Total: 0
+2025-10-22T04:33:06.753+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-10] c.c.m.mapper.StudentMapper.findById      : ==>  Preparing: SELECT * FROM student WHERE id = ?
+2025-10-22T04:33:06.754+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-10] c.c.m.mapper.StudentMapper.findById      : ==> Parameters: 1(Long)
+2025-10-22T04:33:06.755+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-10] c.c.m.mapper.StudentMapper.findById      : <==      Total: 0
+2025-10-22T04:34:00.483+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-5] c.c.m.mapper.StudentMapper.findAll       : ==>  Preparing: SELECT * FROM student ORDER BY id DESC
+2025-10-22T04:34:00.484+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-5] c.c.m.mapper.StudentMapper.findAll       : ==> Parameters: 
+2025-10-22T04:34:00.487+09:00 DEBUG 25672 --- [ch03] [http-nio-8090-exec-5] c.c.m.mapper.StudentMapper.findAll       : <==      Total: 7
+2025-10-22T04:36:00.117+09:00  INFO 25672 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (12 additions, 12 deletions, 0 modifications)
+2025-10-22T04:36:00.124+09:00  INFO 25672 --- [ch03] [Thread-6] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T04:36:00.142+09:00  INFO 25672 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T04:36:00.152+09:00  INFO 25672 --- [ch03] [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-22T04:36:00.161+09:00  INFO 25672 --- [ch03] [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-22T04:36:00.293+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 25672 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:36:00.294+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:36:00.689+09:00  WARN 25672 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:36:00.779+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:36:00.782+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:36:00.782+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:36:00.829+09:00  INFO 25672 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:36:00.830+09:00  INFO 25672 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 532 ms
+2025-10-22T04:36:00.873+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:36:01.067+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T04:36:01.092+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T04:36:01.097+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Started CalculatorApplication in 0.87 seconds (process running for 273.584)
+2025-10-22T04:36:01.104+09:00  INFO 25672 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MybatisAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean,org.mybatis.spring.mapper.MapperScannerConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-10-22T04:37:22.836+09:00  INFO 25672 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-22T04:37:22.838+09:00  INFO 25672 --- [ch03] [Thread-8] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T04:37:22.854+09:00  INFO 25672 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T04:37:22.961+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 25672 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:37:22.962+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:37:23.268+09:00  WARN 25672 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:37:23.328+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:37:23.329+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:37:23.329+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:37:23.375+09:00  INFO 25672 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:37:23.375+09:00  INFO 25672 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 410 ms
+2025-10-22T04:37:23.405+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:37:23.533+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T04:37:23.551+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T04:37:23.557+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Started CalculatorApplication in 0.647 seconds (process running for 356.042)
+2025-10-22T04:37:23.558+09:00  INFO 25672 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-22T04:37:26.988+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T04:37:26.989+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T04:37:26.990+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T04:37:42.882+09:00  INFO 25672 --- [ch03] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-22T04:37:42.883+09:00  INFO 25672 --- [ch03] [Thread-12] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T04:37:42.903+09:00  INFO 25672 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T04:37:43.008+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Starting CalculatorApplication using Java 21.0.8 with PID 25672 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:37:43.008+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:37:43.343+09:00  WARN 25672 --- [ch03] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2025-10-22T04:37:43.401+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:37:43.403+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:37:43.403+09:00  INFO 25672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:37:43.451+09:00  INFO 25672 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:37:43.452+09:00  INFO 25672 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 441 ms
+2025-10-22T04:37:43.481+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:37:43.601+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T04:37:43.620+09:00  INFO 25672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T04:37:43.628+09:00  INFO 25672 --- [ch03] [restartedMain] com.example.demo.CalculatorApplication   : Started CalculatorApplication in 0.668 seconds (process running for 376.114)
+2025-10-22T04:37:43.630+09:00  INFO 25672 --- [ch03] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-22T04:37:46.414+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T04:37:46.415+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T04:37:46.415+09:00  INFO 25672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-22T04:37:50.744+09:00  INFO 25672 --- [ch03] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T04:37:50.745+09:00  INFO 25672 --- [ch03] [RMI TCP Connection(20)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T04:37:50.761+09:00  INFO 25672 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T04:37:53.949+09:00  INFO 22672 --- [ch03] [restartedMain] com.cjh.CalculatorApplication            : Starting CalculatorApplication using Java 21.0.8 with PID 22672 (C:\a_jihyeon\s09_springboot\ch03\bin\main started by CJH in C:\a_jihyeon\s09_springboot\ch03)
+2025-10-22T04:37:53.952+09:00  INFO 22672 --- [ch03] [restartedMain] com.cjh.CalculatorApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-10-22T04:37:54.042+09:00  INFO 22672 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T04:37:54.042+09:00  INFO 22672 --- [ch03] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T04:37:56.236+09:00  INFO 22672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-10-22T04:37:56.261+09:00  INFO 22672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T04:37:56.268+09:00  INFO 22672 --- [ch03] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22T04:37:56.367+09:00  INFO 22672 --- [ch03] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T04:37:56.368+09:00  INFO 22672 --- [ch03] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2325 ms
+2025-10-22T04:37:56.953+09:00  INFO 22672 --- [ch03] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2025-10-22T04:37:57.505+09:00  INFO 22672 --- [ch03] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T04:37:57.570+09:00  INFO 22672 --- [ch03] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-10-22T04:37:57.583+09:00  INFO 22672 --- [ch03] [restartedMain] com.cjh.CalculatorApplication            : Started CalculatorApplication in 4.458 seconds (process running for 5.786)
+2025-10-22T04:37:59.256+09:00  INFO 22672 --- [ch03] [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T04:37:59.257+09:00  INFO 22672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T04:37:59.258+09:00  INFO 22672 --- [ch03] [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-22T04:38:09.822+09:00  INFO 22672 --- [ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T04:38:10.024+09:00  INFO 22672 --- [ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@315ee407
+2025-10-22T04:38:10.028+09:00  INFO 22672 --- [ch03] [http-nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T04:38:10.081+09:00 DEBUG 22672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : ==>  Preparing: SELECT * FROM student ORDER BY id DESC
+2025-10-22T04:38:10.120+09:00 DEBUG 22672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : ==> Parameters: 
+2025-10-22T04:38:10.161+09:00 DEBUG 22672 --- [ch03] [http-nio-8090-exec-2] c.c.m.mapper.StudentMapper.findAll       : <==      Total: 7
+2025-10-22T04:38:13.116+09:00 DEBUG 22672 --- [ch03] [http-nio-8090-exec-1] c.c.m.mapper.StudentMapper.findById      : ==>  Preparing: SELECT * FROM student WHERE id = ?
+2025-10-22T04:38:13.122+09:00 DEBUG 22672 --- [ch03] [http-nio-8090-exec-1] c.c.m.mapper.StudentMapper.findById      : ==> Parameters: 1(Long)
+2025-10-22T04:38:13.123+09:00 DEBUG 22672 --- [ch03] [http-nio-8090-exec-1] c.c.m.mapper.StudentMapper.findById      : <==      Total: 0
+2025-10-22T04:39:27.641+09:00  INFO 22672 --- [ch03] [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-22T04:39:27.645+09:00  INFO 22672 --- [ch03] [RMI TCP Connection(11)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22T04:39:27.668+09:00  INFO 22672 --- [ch03] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-22T04:39:27.678+09:00  INFO 22672 --- [ch03] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-22T04:39:27.685+09:00  INFO 22672 --- [ch03] [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

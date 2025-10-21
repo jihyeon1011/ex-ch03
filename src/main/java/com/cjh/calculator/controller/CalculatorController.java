@@ -1,10 +1,10 @@
-package com.example.demo.calculator.controller;
+package com.cjh.calculator.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.calculator.dto.CalculationRequest;
-import com.example.demo.calculator.dto.CalculationResponse;
-import com.example.demo.calculator.service.CalculatorService;
+import com.cjh.calculator.dto.CalculationRequest;
+import com.cjh.calculator.dto.CalculationResponse;
+import com.cjh.calculator.service.CalculatorService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
